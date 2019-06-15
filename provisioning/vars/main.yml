@@ -1,0 +1,8 @@
+---
+minecraft_version: 1.12.2
+minecraft_server: spigot
+minecraft_max_memory: 1024M
+minecraft_initial_memory: 1024M
+minecraft_server_properties:
+  # creative mode
+  gamemode: 1
