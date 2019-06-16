@@ -26,6 +26,18 @@ an office for our nacent worker co-operative.
 - Build a voxel pub to represent our future SSB pub.
 - Set up our real meatspace office inspired by our digital prototype.
 
+## :gear: Configuration
+
+This deployment setup consists mainly of the
+[`devops-coop/ansible-minecraft`][ansible-role] Ansible role.
+
+Most configuration occurs in
+[`provisioning/vars/main.yml`](/provisioning/vars/main.yml).
+
+   [ansible-role]: https://github.com/devops-coop/ansible-minecraft/
+
+The main configuration 
+
 ## :rocket: Deployment
 
 1. Install Vagrant.
