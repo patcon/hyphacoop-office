@@ -3,6 +3,39 @@ minecraft_version: 1.12.2
 minecraft_server: spigot
 minecraft_max_memory: 1024M
 minecraft_initial_memory: 1024M
+minecraft_ops:
+  - patcon
 minecraft_server_properties:
-  # creative mode
+  # Use creative mode
   gamemode: 1
+  force-gamemode: true
+
+  level-name: hyphacoop
+  server-name: "Hypha Worker Co-operative: Office"
+  motd: "Welcome to our experimental office!"
+  # As many employees as we have. (Server is low resources.)
+  max-players: 7
+
+  # Peaceful mode. No monsters.
+  difficulty: 0
+  spawn-monsters: false
+  allow-flight: true
+  # Disable the hell dimension.
+  allow-nether: false
+
+  # Spawn villages populated with non-player characters.
+  generate-structures: true
+  spawn-npcs: true
+
+  # Players can damage one another.
+  pvp: true
+
+  # Development features.
+  enable-command-block: true
+  enable-query: true
+  enable-rcon: true
+
+  # Disable sending anon data to Mojang.
+  snooper-enabled: false
+  # Don't auth users with Mojang servers. (Allows cracked accounts to join.)
+  online-mode: false
