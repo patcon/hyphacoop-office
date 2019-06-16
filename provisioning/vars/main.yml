@@ -37,5 +37,7 @@ minecraft_server_properties:
 
   # Disable sending anon data to Mojang.
   snooper-enabled: false
-  # Don't auth users with Mojang servers. (Allows cracked accounts to join.)
-  online-mode: false
+  # Would prefer not to auth users with Mojang servers, but must for settings ops/admins correctly.
+  # See: https://forums.spongepowered.org/t/why-are-the-uuids-changing-in-offline-mode/20237/5
+  # TODO: Support offline uuids to disable this and allow cracked accounts to join.
+  online-mode: true
