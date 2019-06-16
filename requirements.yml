@@ -1,2 +1,7 @@
 ---
-- src: devops-coop.minecraft
+# Added fix to help spigot build on a low-ram 1GB server.
+- src: https://github.com/patcon/ansible-minecraft.git
+  version: low-memory-system
+  # src: https://github.com/devops-coop/ansible-minecraft.git
+  # version: master
+  name: devops-coop.minecraft
