@@ -17,6 +17,15 @@ an office for our nacent worker co-operative.
 
    [memory-palace]: http://johnguycollick.com/minecraft-memory-palace/
 
+## :crystal_ball: Bluesky
+
+- Make digital office accessible over mesh network.
+- Integrate dweb protocols (e.g., ipfs) into popular server mods.
+- Build conference room for video calls in virtual office.
+- Buy VR equipment and live in the future.
+- Build a voxel pub to represent our future SSB pub.
+- Set up our real meatspace office inspired by our digital prototype.
+
 ## :rocket: Deployment
 
 WIP
