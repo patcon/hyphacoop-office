@@ -28,7 +28,19 @@ an office for our nacent worker co-operative.
 
 ## :rocket: Deployment
 
-WIP
+1. Install Vagrant.
+2. Prepare the environment by running these commands:
+    ```
+    vagrant plugin install vagrant-digitalocean
+    vagrant plugin install vagrant-env
+    cp sample.env .env
+    ```
+3. Edit your new `.env` file.
+4. Run `vagrant up` to create a remote test server.
+5. As you modify ansible config files, run `vagrant provision` to sync
+   server to configuration in code.
+6. When you're done experimenting, spin down the cloud server with
+   `vagrant destroy`.
 
 ## :copyright: License
 

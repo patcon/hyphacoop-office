@@ -1,20 +1,16 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-ENV['VAGRANT_DEFAULT_PROVIDER'] = 'digital_ocean'
-
-# All Vagrant configuration is done below. The "2" in Vagrant.configure
-# configures the configuration version (we support older styles for
-# backwards compatibility). Please don't change it unless you know what
-# you're doing.
 Vagrant.configure("2") do |config|
+  config.env.enable
+
   config.vm.define "minecraft-office" do |config|
       config.vm.provider :digital_ocean do |provider, override|
-        override.ssh.private_key_path = '~/.ssh/id_rsa_macbook'
+        override.ssh.private_key_path = ENV['DIGITALOCEAN_SSH_KEY_PATH']
         override.vm.box = 'digital_ocean'
         override.vm.box_url = "https://github.com/devopsgroup-io/vagrant-digitalocean/raw/master/box/digital_ocean.box"
         override.nfs.functional = false
-        provider.ssh_key_name = 'patcon-macbook'
+        provider.ssh_key_name = ENV['DIGITALOCEAN_SSH_KEY_NAME']
         provider.token = ENV['DIGITALOCEAN_API_TOKEN']
         provider.image = 'ubuntu-16-04-x64'
         provider.region = 'tor1'
